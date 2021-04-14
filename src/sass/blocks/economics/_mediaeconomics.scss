@@ -1,0 +1,135 @@
+@media (max-width: 991px){
+    .economics {
+        &__wrapper {
+            padding: 70px 80px 60px 80px;
+        }
+        &__descr {
+            width: 550px;
+        }
+    }
+    .opinion {
+        &__block {
+            &__wrapper {
+                flex-wrap: wrap;
+                &__col {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
+                    column-gap: 60px;
+                }
+            }
+            &__card {
+                grid-template-columns: 70px 220px;
+            }
+        }
+    }
+
+    .withoutopinion {
+        &__block {
+            &__wrapper {
+                flex-wrap: wrap;
+                &__inner {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: auto;
+                    column-gap: 140px;
+                }
+            }
+            &__card {
+                grid-template-columns: 70px 220px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .economics {
+        &__descr {
+            margin-top: 30px;
+            width: 330px;
+        }
+    }
+    .opinion {
+        &__block {
+            &__card {
+                grid-template-columns: 70px 380px;
+            }
+            &__wrapper {
+                flex-wrap: wrap;
+                &__inner {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+    .withoutopinion {
+        &__block {
+            &__card {
+                grid-template-columns: 70px 380px;
+            }
+            &__wrapper {
+                flex-wrap: wrap;
+                &__inner {
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .container {
+        width: 370px;
+    }
+    .economics {
+        margin-top: 80px;
+        &__wrapper {
+            padding: 70px 40px 60px 40px;
+        }
+        &__descr {
+            margin-top: 30px;
+            width: 230px;
+        }
+    }
+    .opinion {
+        &__block {
+            &__card {
+                grid-template-columns: 70px 250px;
+            }
+        }
+    }
+    .withoutopinion {
+        &__block {
+            &__card {
+                grid-template-columns: 70px 250px;
+            }
+        }
+    }
+}
+
+@media (max-width: 380px){
+    .container {
+        width: 320px;
+    }
+    .economics {
+       &__header {
+           font-size: 28px;
+       }
+    }
+    .opinion {
+        &__block {
+            &__card {
+                grid-template-columns: 70px 175px;
+                margin-left: 10px;
+            }
+        }
+    }
+    .withoutopinion {
+        &__block {
+            &__card {
+                grid-template-columns: 70px 175px;
+                margin-left: 10px;
+            }
+        }
+    }
+}

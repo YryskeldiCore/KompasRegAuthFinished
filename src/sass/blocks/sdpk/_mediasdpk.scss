@@ -1,0 +1,133 @@
+@media (max-width: 1150px) {
+    .sdpksphere {
+        &__background {
+            padding: 112px 30px 60px 30px;
+        }
+    }
+}
+
+@media (max-width: 991px){
+    .sdpk {
+        &__descr {
+            font-size: 17px;
+            width: 700px;
+        }
+        &__wrapper {
+            &__img {
+                &::before {
+                    left: 30%;
+                }
+            }
+        }
+    }
+    .sdpksphere {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__card {
+            margin-bottom: 30px !important;
+            width: 300px;
+            &_header {
+                width: 250px;
+            }
+        }
+        &__background {
+            margin-top: 40px;
+            padding: 112px 55px 92px 55px;
+            background: 
+                        url('../img/EllipseViolet.svg') 0% -5% no-repeat, 
+                        url('../img/EllipseOrange.svg') 120% 25% no-repeat,
+                        url('../img/EllipseBlue.svg') 50% 110% no-repeat;
+            background-color: #F3F3F3;
+        }
+    }
+}
+
+@media (max-width: 767px){
+    .sdpk {
+        &__descr {
+            font-size: 17px;
+            width: 500px;
+        }
+        &__wrapper {
+            &__img {
+                &::before {
+                    left: 20%;
+                }
+            }
+        }
+    }
+    .sdpksphere {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__card {
+            width: 340px;
+            margin-left: 25px;
+        }
+    }
+}
+
+@media (max-width: 575px){
+    .sdpk {
+        &__descr {
+            font-size: 17px;
+            width: 370px;
+        }
+        &__wrapper {
+            &__img {
+                &::before {
+                    left: 10%;
+                }
+            }
+        }
+    }
+    .sdpksphere {
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__card {
+            width: 260px;
+            margin-left: 0;
+        }
+    }
+}
+
+@media (max-width: 379px){
+    .sdpk {
+        margin-top: 60px;
+        &__header {
+            font-size: 28px;
+        }
+        &__descr {
+            font-size: 17px;
+            width: 300px;
+        }
+        &__wrapper {
+            &__img {
+                &::before {
+                    left: 3%;
+                }
+            }
+        }
+    }
+    .sdpksphere {
+        &__background {
+            padding: 80px 30px 50px 30px;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+        }
+        &__card {
+            padding-left: 0;
+            width: 260px;
+            column-gap: 20px;
+            &_header {
+                width: 200px;
+            }
+        }
+        &__subheader {
+            font-size: 19px;
+        }
+    }
+}

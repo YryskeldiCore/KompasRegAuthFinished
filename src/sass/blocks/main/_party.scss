@@ -1,0 +1,60 @@
+.party {
+    &__block {
+        margin-top: 84px;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 300px);
+            grid-template-rows: minmax(120px, auto);
+            row-gap: 30px;
+            column-gap: 50px;
+            margin-top: 63px;
+        }
+        &__header {
+            font-weight: 900;
+            font-size: 32px;
+            line-height: 39px;
+            text-align: center;
+            color: #3E3E3E;
+        }
+        &__subheader {
+            font-weight: 300;
+            font-size: 19px;
+            line-height: 23px;
+            text-align: center;
+            color: #ADADAD;
+            margin-top: 9px;
+        }
+        img {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        &__card {
+            display: grid;
+            grid-template-columns: 70px 177px;
+            column-gap: 20px;
+            padding: 25px 17px 22px 16px;
+            height: 120px;
+            background: #F3F3F3;
+            &__descr {
+                display: grid;
+                grid-template-rows: 60px 20px;
+            }
+            &_text {
+                font-weight: 800;
+                font-size: 15px;
+                line-height: 18px;
+                color: #3E3E3E;
+            }
+            &_link {
+                font-weight: 800;
+                font-size: 11px;
+                line-height: 13px;
+                color: #AFAFAF;
+                &:hover {
+                    transition: 0.7s all;
+                    text-decoration: none;
+                    color: #000;
+                }
+            }
+        }
+    }
+}

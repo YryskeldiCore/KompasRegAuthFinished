@@ -1,0 +1,177 @@
+@import 'libs/bootstrap-reboot.min';
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700i&subset=cyrillic');
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat Light';
+    src: url('../fonts/Montserrat-Light.ttf') format('truetype'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Regular';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype'),
+         url('../fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Black';
+    src: url('../fonts/Montserrat-Black.ttf') format('truetype'),
+         url('../fonts/Montserrat-Black.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat ExtraBold';
+    src: url('../fonts/Montserrat-ExtraBold.ttf') format('truetype'),
+         url('../fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.line {
+    display: flex;
+    height: 10px;
+    &__1 {
+        width: 100%;
+        background: #5BC0F9;
+    }
+    &__2 {
+        width: 100%;
+        background: #EE8787;
+    }
+    &__3 {
+        width: 100%;
+        background: #F8C199;
+    }
+    &__4 {
+        width: 100%;
+        background: #BC9BF1;
+    }
+}
+
+.lang {
+    display: block;
+    margin: 0 auto;
+    margin-top: 24px;
+    width: 100px;
+    &__link {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 22px;
+        color: #3E3E3E;
+        text-decoration: none;
+        position: relative;
+        &::before{
+            content: '';
+            width: 0;
+            height: 0.2em;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background: #ffffff;
+            transition: 1s all;
+        }
+        &:hover {
+            color: #000;
+            text-decoration: none;
+            &::before {
+                width: 100%;
+                background: #5BC0F9;
+            }
+        }
+    }
+}
+
+.status {
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    height: 50px;
+    width: 200px;
+    background-color: green;
+    border: 1px solid greenyellow;
+    border-radius: 8px;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.form {
+    margin-top: 50px;
+    h2 {
+        text-align: center;
+    }
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_select {
+            margin-bottom: 30px;
+        }
+    }
+    input {
+        width: 250px;
+        height: 30px;
+        margin-bottom: 30px;
+    }
+    .btn-submit {
+        border-radius: 8px;
+        color: black;
+        border: 1px solid red;
+        width: 200px;
+        height: 50px;
+        display: block;
+        margin: 0 auto;
+    }
+    &__get {
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.error {
+    border: 1px solid red;
+    box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.3);
+}
+
+@import 'blocks/main/header';
+@import 'blocks/main/party';
+@import 'blocks/main/sphere';
+@import 'blocks/main/footer';
+@import 'blocks/main/mediamain';
+@import 'blocks/economics/economics';
+@import 'blocks/economics/opinion';
+@import 'blocks/economics/withoutopinion';
+@import 'blocks/economics/mediaeconomics';
+@import 'blocks/sdpk/sdpk';
+@import 'blocks/sdpk/sdpksphere';
+@import 'blocks/sdpk/mediasdpk';
+
+

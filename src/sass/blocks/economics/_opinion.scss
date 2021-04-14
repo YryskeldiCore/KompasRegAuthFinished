@@ -1,0 +1,101 @@
+.opinion {
+    margin-top: 80px;
+    &__block {
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 53px;
+        }
+        &__card {
+            img {
+                box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+            }
+            display: grid;
+            grid-template-columns: 70px 177px;
+            column-gap: 20px;
+            padding: 25px 16px;
+            min-height: 120px;
+            background: #F3F3F3;
+            transition: all 0.4s;
+            margin-bottom: 30px;
+            &__descr {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+            &_text {
+                font-weight: 800;
+                font-size: 15px;
+                line-height: 18px;
+                color: #3E3E3E;
+            }
+            &_link {
+                font-weight: 800;
+                font-size: 11px;
+                line-height: 13px;
+                color: #AFAFAF;
+                cursor: pointer;
+                transition: all 1s;
+                outline: none;
+                &:hover {
+                    color: #000;
+                    text-decoration: none;
+                }
+                .active-style {
+                    font-weight: bold;
+                    font-size:x-large;
+                }
+            }
+            &_content {
+                width: 265px;
+                height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transition: 0.3s all;
+            }
+            .active-content {
+                overflow: visible;
+                opacity: 1;
+                margin-top: 30px;
+                height: 220px;
+            }
+            &_goto {
+                position: relative;
+                font-weight: 800;
+                font-size: 11px;
+                line-height: 13px;
+                color: #3E3E3E;
+                transition: .5s all;
+                &::after {
+                    content: url('../../../icons/sdpkIcons/moreright.svg');
+                    position: absolute;
+                    top: 2px;
+                    right: -15px;
+                }
+                &:hover {
+                    color: #000;
+                    text-decoration: none;
+                    &:after {
+                        transform: translateX(5px);
+                        transition: .5s all;
+                    }
+                }
+            }
+        }
+    }
+    &__header {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+        color: #3E3E3E;
+    }
+    &__subheader {
+        font-weight: normal;
+        font-size: 19px;
+        line-height: 23px;
+        text-align: center;
+        color: #ADADAD;
+    }
+
+}

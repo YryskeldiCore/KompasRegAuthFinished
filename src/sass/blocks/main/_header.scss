@@ -1,0 +1,10 @@
+.header {
+    min-height: 200px;
+    background: #F3F3F3;
+    padding: 35px 0;
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
